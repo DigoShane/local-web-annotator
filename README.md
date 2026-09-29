@@ -105,3 +105,22 @@ popup.js
 popup.css
 background.js
 README.md
+```
+
+## Installation Screenshots
+
+### 1. Open the extensions page
+
+![Open extensions page](docs/images/install-1-extension-loaded.png)
+
+### 2. Enable Developer mode
+
+![Enable Developer mode](docs/images/install-2-extension-loaded.png)
+
+### 3. Load the unpacked extension
+
+![Load unpacked extension](docs/images/install-3-extension-loaded.png)
+
+### 4. Confirm the extension is loaded
+
+![Extension loaded](docs/images/install-4-extension-loaded.png)
