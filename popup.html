@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Local Web Annotator</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main>
+    <h1>Local Web Annotator</h1>
+    <div id="status" class="status">Loading current page…</div>
+
+
+    <section>
+      <h2>Floating SF toolbar</h2>
+      <p class="small muted">The toolbar does not appear until you open this extension. Open the website's instruction drawer first, then click this extension.</p>
+      <div class="grid2">
+        <button id="showToolbar" class="primary">Show toolbar</button>
+        <button id="hideToolbar">Hide toolbar</button>
+      </div>
+      <p id="toolbarStatus" class="small muted">Toolbar is hidden until enabled.</p>
+    </section>
+
+    <section>
+      <h2>Highlight mode</h2>
+      <p id="modeStatus" class="small muted">Checking highlight mode…</p>
+      <div class="grid2">
+        <button id="startHighlight" class="primary">Start highlighting</button>
+        <button id="stopHighlight">Stop highlighting</button>
+      </div>
+      <p class="small muted">Open the website's instruction drawer first, then turn this on. After that, selecting text on the page creates a highlight automatically.</p>
+    </section>
+
+
+    <section>
+      <h2>Highlight color</h2>
+      <p class="small muted">New highlights and graphic comments use the selected color. Existing items keep their own colors unless edited.</p>
+      <div id="standardColors" class="swatchGrid" aria-label="Standard highlight colors"></div>
+      <div class="customColorRow">
+        <input id="customColorPicker" type="color" value="#ffeb3b" title="Choose custom color" />
+        <button id="addCustomColor">Add saved color</button>
+      </div>
+      <div class="customHeader small muted">Saved custom colors <span id="customColorCount">0/5</span></div>
+      <div id="customColors" class="swatchGrid" aria-label="Saved custom highlight colors"></div>
+      <div id="colorStatus" class="small muted"></div>
+    </section>
+
+    <section>
+      <h2>Current page</h2>
+      <div id="pageInfo" class="small muted"></div>
+      <div class="grid2">
+        <button id="exportCurrent">Save page JSON</button>
+        <button id="importCurrent">Load page JSON</button>
+      </div>
+      <input id="fileInput" type="file" accept="application/json,.json" hidden />
+    </section>
+
+    <section>
+      <h2>Local folder sync</h2>
+      <p class="small muted">Choose a folder once, then save/load this page's annotation file from that folder.</p>
+      <div class="grid2">
+        <button id="chooseFolder">Choose folder</button>
+        <button id="saveFolder">Save to folder</button>
+        <button id="loadFolder">Load from folder</button>
+        <button id="forgetFolder">Forget folder</button>
+      </div>
+      <div id="folderStatus" class="small muted"></div>
+    </section>
+
+    <section>
+      <h2>All stored data</h2>
+      <div class="grid2">
+        <button id="exportAll">Export all JSON</button>
+        <button id="clearCurrent" class="danger">Clear current page</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>How to use</h2>
+      <ol class="small">
+        <li>Open the instruction drawer/panel on the website.</li>
+        <li>Click <strong>Start highlighting</strong>.</li>
+        <li>Select text. It highlights automatically.</li>
+        <li>Click a highlight to add a comment or delete it.</li>
+        <li>To add a graphic comment, select text and then click a shape in the floating toolbar. Drag the graphic to reposition it relative to the selected text.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
