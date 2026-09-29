@@ -111,15 +111,15 @@ README.md
 
 ### 1. Open the extensions page
 
-![Open extensions page](docs/images/install-1-extension-loaded.png)
+![Open extensions page](docs/images/install-1-extension-page.png)
 
 ### 2. Enable Developer mode
 
-![Enable Developer mode](docs/images/install-2-extension-loaded.png)
+![Enable Developer mode](docs/images/install-2-developer-mode.png)
 
 ### 3. Load the unpacked extension
 
-![Load unpacked extension](docs/images/install-3-extension-loaded.png)
+![Load unpacked extension](docs/images/install-3-load-unpacked.png)
 
 ### 4. Confirm the extension is loaded
 
