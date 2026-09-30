@@ -13,7 +13,7 @@ It allows you to:
 It is especially useful for webpages with **instruction panels**, **internal tabs**, and **changing content**.
 
 ### Advantages over other (semi) free annotators like Hypothesis: Highlighting something does not automatically close the SF instructions panel.
-#### If you do not know what SF is, this is not for you.
+#### If you do not know what SF is, then this was not designed for you. However, if you do decide to use it. Please feel free to use it. Feedback is welcome. digo.sen16@gmail.com
 
 ---
 
